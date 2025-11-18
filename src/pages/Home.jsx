@@ -1,5 +1,5 @@
 import { Divider, Typography } from "@mui/material";
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Badge, Button, Stack } from "react-bootstrap";
 import { createJob, deleteJob, getJob, updateJob } from "../services/allAPI";
 import Swal from "sweetalert2";
@@ -109,10 +109,10 @@ const Home = () => {
         display();
         setCompanyName("");
         setPosition("");
-        setStatus("");
+        setStatus("Applied");
         setDate("");
         setNotes("");
-        setJobId("");
+        setJobId(null);
       } else {
         Swal.fire({
           title: "Error!",
