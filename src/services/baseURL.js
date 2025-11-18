@@ -1,0 +1,1 @@
+export const baseURL="https://jobserver-vdkb.onrender.com"

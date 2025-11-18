@@ -1,17 +1,18 @@
 import axiosConfig from "./axiosConfig";
+import { baseURL } from "./baseURL";
 
 export const createJob = async (reqBody) => {
-  return await axiosConfig("post", "http://localhost:3000/job", reqBody);
+  return await axiosConfig("post", `${baseURL}/job`, reqBody);
 };
 
 export const getJob = async () => {
-  return await axiosConfig("get", "http://localhost:3000/job", "");
+  return await axiosConfig("get", "${baseURL}/job", "");
 };
 
 export const deleteJob = async (id) => {
-  return await axiosConfig("delete", `http://localhost:3000/job/${id}`, "");
+  return await axiosConfig("delete", `${baseURL}/job/${id}`, "");
 };
 
 export const updateJob = async (id, reqBody) => {
-  return await axiosConfig("patch", `http://localhost:3000/job/${id}`, reqBody);
+  return await axiosConfig("patch", `${baseURL}/job${id}`, reqBody);
 };
