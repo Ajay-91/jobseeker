@@ -6,7 +6,7 @@ export const createJob = async (reqBody) => {
 };
 
 export const getJob = async () => {
-  return await axiosConfig("get", "${baseURL}/job", "");
+  return await axiosConfig(`get", "${baseURL}/job`, "");
 };
 
 export const deleteJob = async (id) => {

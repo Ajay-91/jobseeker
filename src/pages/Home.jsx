@@ -143,6 +143,7 @@ const Home = () => {
     : jobData;
 
   let total = jobData.length;
+  console.log(total)
   let applied = jobData.filter((job) =>
     job.status.toLowerCase().includes("applied")
   );
